@@ -42,7 +42,7 @@ public class Persona {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Persona persona = (Persona) o;
-        return Edad == persona.Edad && Objects.equals(nombre, persona.nombre) && Objects.equals(Apellidos, persona.Apellidos);
+        return Objects.equals(nombre, persona.nombre) && Objects.equals(Apellidos, persona.Apellidos);
     }
 
     @Override

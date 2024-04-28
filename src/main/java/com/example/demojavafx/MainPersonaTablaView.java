@@ -19,7 +19,7 @@ public class MainPersonaTablaView extends Application {
         try {
             //Cargo la vista
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainPersonaTablaView.class.getResource("PersonaVista2.fxml"));
+            loader.setLocation(MainPersonaTablaView.class.getResource("PersonaVista.fxml"));
 
             // Cargo la ventana
             Pane ventana = (Pane) loader.load();
@@ -29,6 +29,7 @@ public class MainPersonaTablaView extends Application {
 
             // Seteo la scene y la muestro
             primaryStage.setScene(scene);
+            primaryStage.setTitle("Agregar Parsonas");
             primaryStage.show();
         } catch (IOException e) {
             System.out.println(e.getMessage());
